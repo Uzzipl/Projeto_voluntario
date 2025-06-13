@@ -36,3 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Erro ao buscar CEP. Tente novamente.');
             });
     });
+        // Validar e enviar formulário
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validação básica
+        const nomeInstituicao = document.getElementById('nomeInstituicao').value;
+        const tipoAjuda = document.getElementById('tipoAjuda').value;
+        const tituloNecessidade = document.getElementById('tituloNecessidade').value;
+        const descricao = document.getElementById('descricao').value;
+        const contato = document.getElementById('contato').value;
+        
+        if (!nomeInstituicao || !tipoAjuda || !tituloNecessidade || !descricao || !contato) {
+            alert('Preencha todos os campos obrigatórios.');
+            return;
+        }
+
