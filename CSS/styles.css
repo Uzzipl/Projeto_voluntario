@@ -152,3 +152,43 @@ button[type="submit"]:hover {
     border-radius: 4px;
     cursor: pointer;
 }
+/* Estilos para filtros e listagem de necessidades */
+.filtros {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filtros input, .filtros select {
+    padding: 0.8rem;
+}
+
+.necessidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.necessidade-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.necessidade-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.necessidade-card p {
+    margin-bottom: 0.5rem;
+}
+
+.necessidade-card p strong {
+    color: #2c3e50;
+}
+
+.necessidade-card small {
+    color: #7f8c8d;
+}
