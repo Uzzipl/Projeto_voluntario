@@ -1,4 +1,4 @@
-# Projeto_voluntario# Plataforma de Conexão Voluntária Local
+# Projeto_voluntario # Plataforma Acolhe Brasil
 
 Projeto de aplicação web desenvolvido para conectar ONGs a voluntários de forma eficiente e transparente.
 
@@ -21,4 +21,4 @@ Projeto de aplicação web desenvolvido para conectar ONGs a voluntários de for
 
 ## Publicação
 
-Este projeto está disponível em: [GitHub Pages](https://seu-usuario.github.io/plataforma-voluntaria)
+Este projeto está disponível em: [GitHub Pages](https://uzzipl/plataforma-voluntaria)
