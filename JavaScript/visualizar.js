@@ -34,4 +34,29 @@ document.addEventListener('DOMContentLoaded', function() {
         
         exibirNecessidades(necessidadesFiltradas);
     }
-
+    function exibirNecessidades(necessidadesParaExibir) {
+        listaNecessidades.innerHTML = '';
+        
+        if (necessidadesParaExibir.length === 0) {
+            listaNecessidades.innerHTML = '<p>Nenhuma necessidade encontrada.</p>';
+            return;
+        }
+        
+        necessidadesParaExibir.forEach(necessidade => {
+            const card = document.createElement('div');
+            card.className = 'necessidade-card';
+            
+            card.innerHTML = `
+                <h3>${necessidade.tituloNecessidade}</h3>
+                <p><strong>Instituição:</strong> ${necessidade.nomeInstituicao}</p>
+                <p><strong>Tipo de Ajuda:</strong> ${necessidade.tipoAjuda}</p>
+                <p><strong>Descrição:</strong> ${necessidade.descricao}</p>
+                <p><strong>Local:</strong> ${necessidade.rua ? necessidade.rua + ', ' : ''}${necessidade.bairro}, ${necessidade.cidade} - ${necessidade.estado}</p>
+                <p><strong>Contato:</strong> ${necessidade.contato}</p>
+                <p><small>Cadastrado em: ${necessidade.dataCadastro}</small></p>
+            `;
+            
+            listaNecessidades.appendChild(card);
+        });
+    }
+});
