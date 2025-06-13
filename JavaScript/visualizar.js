@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Exibir todas as necessidades inicialmente
     exibirNecessidades(necessidades);
+        // Filtro por pesquisa
+    pesquisaInput.addEventListener('input', function() {
+        filtrarNecessidades();
+    });
+    
+    // Filtro por tipo
+    filtroTipo.addEventListener('change', function() {
+        filtrarNecessidades();
+    });
