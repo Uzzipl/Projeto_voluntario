@@ -192,3 +192,18 @@ button[type="submit"]:hover {
 .necessidade-card small {
     color: #7f8c8d;
 }
+/* Responsividade */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .necessidades-container {
+        grid-template-columns: 1fr;
+    }
+}
