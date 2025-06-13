@@ -51,4 +51,34 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Preencha todos os campos obrigatórios.');
             return;
         }
+                // Criar objeto de necessidade
+        const necessidade = {
+            id: Date.now(),
+            nomeInstituicao,
+            tipoAjuda,
+            tituloNecessidade: tituloNecessidade,
+            descricao,
+            cep: cepInput.value,
+            rua: ruaInput.value,
+            bairro: bairroInput.value,
+            cidade: cidadeInput.value,
+            estado: estadoInput.value,
+            contato,
+            dataCadastro: new Date().toLocaleDateString()
+        };
+        
+        // Adicionar ao array e salvar no localStorage
+        necessidades.push(necessidade);
+        localStorage.setItem('necessidades', JSON.stringify(necessidades));
+        
+        // Limpar formulário
+        form.reset();
+        ruaInput.value = '';
+        bairroInput.value = '';
+        cidadeInput.value = '';
+        estadoInput.value = '';
+        
+        alert('Necessidade cadastrada com sucesso!');
+    });
+});
 
