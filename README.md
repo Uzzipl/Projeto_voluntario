@@ -21,4 +21,4 @@ Projeto de aplicação web desenvolvido para conectar ONGs a voluntários de for
 
 ## Publicação
 
-Este projeto está disponível em: [GitHub Pages](https://uzzipl/plataforma-voluntaria)
+Este projeto está disponível em: [GitHub Pages](https://uzzipl.github.io/Projeto_voluntario/index.html)
